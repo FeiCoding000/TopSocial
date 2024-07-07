@@ -1,5 +1,5 @@
 const axios=require('axios')
-const getProfile=async function(req,res){
+const getProfile=async function(req,res,next){
     try{
 
         const url='http://localhost:8000/profile';
@@ -13,7 +13,7 @@ const getProfile=async function(req,res){
         )
 
     }catch(error){
-        console.log('error',error)
+        next(error)
     }
 
 

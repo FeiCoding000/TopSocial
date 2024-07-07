@@ -1,6 +1,6 @@
 const axios =require('axios');
 
-const getMessage= async function(req,res){
+const getMessage= async function(req,res,next){
     try{
         const url='http://localhost:8000/message';
         const message= await axios.get(url);
@@ -14,7 +14,7 @@ const getMessage= async function(req,res){
 
     }catch(err)
     {
-      console.log('message error',err);
+      next(err);
     }
 
 }
