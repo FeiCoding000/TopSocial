@@ -1,3 +1,15 @@
-.nav-container{
-    background-color: blue;
-}
+@import "normalize.css";
+
+
+
+/* foundation */
+@import './src/css/foundation/common.css';
+
+
+/* frame */
+@import './src/css/frames/nav/nav.css';
+
+
+/* component */
+@import './src/css/components/button.css';
+@import './src/css/components/profile.css';

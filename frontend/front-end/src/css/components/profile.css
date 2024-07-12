@@ -1,0 +1,26 @@
+.profile-photo{
+    height: 2.7rem;
+    width: 2.7rem;
+    border-radius: 50%;
+    border: 0.2rem solid var(--color-gray);
+    overflow: hidden;
+
+}
+
+.profile-photo img{
+    display: block;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    
+}
+
+.profile-photo img:hover{
+    cursor: pointer;
+    transform: rotate(360deg);
+    /* -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    -ms-transform: rotate(360deg); */
+    transition: all 0.5s ease-in-out;
+}
