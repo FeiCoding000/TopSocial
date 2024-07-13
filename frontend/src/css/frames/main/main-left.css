@@ -1,0 +1,68 @@
+.container .main-left{
+    border: 1px solid white;
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+.main-left .profile{
+    background-color: var(--color-bgcolor);
+    height: 4.5rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+    box-sizing: border-box;
+    border: none;
+    border-radius: 1rem;
+    text-decoration: none;
+
+}
+
+
+
+.main-left .profile-description{
+    margin-left: 0.5rem;
+    line-height: 0;
+    /* display: block;     */
+    color: var(--color-black);
+}
+
+
+.main-left .sidebar{
+    background-color: var(--color-bgcolor);
+    margin: 1rem 0;
+    border-radius: 1rem;
+}
+.main-left ul{
+    padding-left: 0;
+}
+.main-left li{
+    list-style: none;
+    
+}
+.main-left .sidebar .menu-item{
+    display: flex;
+    align-items: center;
+    font-family: sans-serif;
+    cursor: pointer;
+    height: 5rem;
+    text-decoration: none;
+    color: black;
+    padding-left: 2rem;
+}
+
+.main-left .sidebar .menu-item:hover{
+    background-color: var(--color-primary);
+}
+
+.main-left .side-btn{
+    width: 80%;
+    background-color: var(--color-primary);
+    border-radius: 5rem;
+    border: none;
+    color: var(--color-white);
+    padding: var(--btn-padding);
+    margin: 0 auto;
+
+}

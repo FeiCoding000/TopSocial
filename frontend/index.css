@@ -12,6 +12,10 @@
 
 /* frame */
 @import './src/css/frames/nav/nav.css';
+@import './src/css/frames/main/main-left.css';
+@import './src/css/frames/main/main-mid.css';
+@import './src/css/frames/main/main-right.css';
+@import './src/css/frames/media/media.css';
 
 
 /* component */
