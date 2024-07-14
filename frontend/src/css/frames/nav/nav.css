@@ -1,16 +1,17 @@
 nav{
     width: 100%;
     padding: 0.7rem 0;
+    background-color: var(--color-white);
     /* height: 100%; */
-    background-color: chocolate;
+    
 }
 .nav-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
     gap: 1rem;
-    background-color: bisque;
-    border: 1px solid black;
+    
+    
 }
 .logo{
     font-size: 1.2rem;
@@ -22,12 +23,13 @@ nav{
     color: var(--color-gray);
 }
 .search-bar{
-    background-color: var(--color-white);
+    background-color: ;
     width: 20rem;
     border-radius: 2rem;
     padding: 0.7rem;
     display: flex;
     justify-content: center;
+    background-color: var(--color-bgcolor);
 }
 
 .bi.bi-search{

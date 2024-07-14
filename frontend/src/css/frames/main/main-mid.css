@@ -1,4 +1,50 @@
 .container .main-mid{
-    border: 1px solid white;
+    border: 1px solid red;
     width: 60%;
+}
+
+.main-mid .main-mid-card-wrapper{
+    display: flex;
+    justify-content: space-between;
+    gap: 0.5rem;
+    width: 100%;
+    height: 30dvh;
+    background-color: bisque;
+    text-align: center;
+    margin: 1rem 0;
+    ;
+}
+
+.main-mid .main-mid-card-wrapper .main-mid-card{
+    position: relative;
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: inherit;
+    text-align: center;
+    background-color: brown;
+}
+
+.main-mid .main-mid-card-wrapper .main-mid-card>img{
+    height: inherit;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 1rem;
+    background-color: blueviolet;
+}
+
+
+.main-mid-card .profile-photo{
+    position: absolute;
+    left: 50%;
+    top: 5%;
+    transform: translate(-50%, 0);
+}
+.main-mid-card>p {
+    position: absolute;
+    left: 50%;
+    bottom: 5%;
+    color: white;
+    transform: translate(-50%, 0);
 }

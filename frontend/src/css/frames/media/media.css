@@ -1,0 +1,22 @@
+@media screen and (width <1420px){
+    .container .main-left{
+        display: none;
+    }
+    .container .main-mid{
+        width: 70%;
+    }
+    .container .main-right{
+        width: 30%;
+    }
+    
+}
+
+@media screen and (width <1280px){
+    .container .main-right{
+        display: none;
+    }
+    .container .main-mid{
+        width: 100%;
+    }
+    
+}
