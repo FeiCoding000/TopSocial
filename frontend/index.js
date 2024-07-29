@@ -3,6 +3,7 @@ import {getDatabase} from '@/js/database/database.js';
 // import { getPath } from '@/js/database/utils.js';
 import {setMainLeftProfileImage} from '@/js/main/main-left.js';
 import { setRightCornerImage } from '@/js/nav/nav';
+import { setMidHighLineImg, setMidProfileImg} from '@/js/main/main-mid.js';
 
 
 
@@ -28,6 +29,15 @@ setRightCornerImage(profile);
 setMainLeftProfileImage(profile);
 
 //main-mid
+
+
+setMidHighLineImg();
+setMidProfileImg();
+
+
+
+
+
 
 
 //main-right

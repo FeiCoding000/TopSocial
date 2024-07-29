@@ -9,9 +9,8 @@
     gap: 0.5rem;
     width: 100%;
     height: 30dvh;
-    background-color: bisque;
     text-align: center;
-    margin: 1rem 0;
+    margin: 0;
     ;
 }
 
@@ -23,7 +22,7 @@
     width: 100%;
     height: inherit;
     text-align: center;
-    background-color: brown;
+    
 }
 
 .main-mid .main-mid-card-wrapper .main-mid-card>img{
