@@ -1,5 +1,4 @@
 .container .main-mid{
-    border: 1px solid red;
     width: 60%;
 }
 
@@ -10,7 +9,7 @@
     width: 100%;
     height: 30dvh;
     text-align: center;
-    margin: 0;
+    margin: 1rem 0;
     ;
 }
 
@@ -48,7 +47,7 @@
     transform: translate(-50%, 0);
 }
 .main-mid-card-wrapper .popup{
-    /* display: none; */
+    display: none;
     position: fixed;
     top: 0;
     left: 0;
@@ -62,7 +61,7 @@
 
 .popup-content {
     background-color: var(--color-white);
-    width: 8-dvw;
+    width: 90%;
     padding: 1rem 0;
     border-radius: 10px;
     text-align: center;
@@ -96,4 +95,47 @@
 
 .popup-trigger {
     cursor: pointer;
+    
+}
+.main-mid-thought-wrapper {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.main-mid-thought-wrapper>input {
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    padding: 1rem;
+    border-radius: 1rem;
+    border: none;
+}
+.main-mid-thought-wrapper>.profile-photo {
+    position: absolute;
+    left: 1rem;
+}
+
+.main-mid-thought-wrapper> :last-child {
+    position: absolute;
+    right: 0.5rem;
+}
+
+.main-mid-post-wrapper{
+    margin: 1rem 0;
+    border-radius: 1rem;
+}
+.main-mid-post-wrapper>article {
+    background: var(--color-bgcolor);
+    margin-bottom: 1rem;
+    padding: 0 1rem;
+    border-radius: 1rem;
+}
+.info-picture img {
+    border-radius: 0.5rem;
+}
+.info-control {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5rem;
 }
