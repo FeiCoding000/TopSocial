@@ -47,3 +47,53 @@
     color: white;
     transform: translate(-50%, 0);
 }
+.main-mid-card-wrapper .popup{
+    /* display: none; */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+}
+
+.popup-content {
+    background-color: var(--color-white);
+    width: 8-dvw;
+    padding: 1rem 0;
+    border-radius: 10px;
+    text-align: center;
+}
+.popup-content>h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    color: #333;
+}
+.popup-content>p {
+    font-size: 2rem;
+    text-align: justify;
+    color: #666;
+    line-height: 2;
+    margin: 0 1rem;
+}
+.popup-close {
+    color: var(--color-white);
+    background-color: var(--color-primary);
+    padding: var(--btn-padding);
+    border-radius: 1rem;
+    margin-top: 10px;
+    font-size: 0.9rem;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    border: none;
+}
+.popup-close:hover {
+    color: black;
+}
+
+.popup-trigger {
+    cursor: pointer;
+}
