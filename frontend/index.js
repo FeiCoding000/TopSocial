@@ -3,7 +3,15 @@ import { getDatabase } from "@/js/database/database.js";
 // import { getPath } from '@/js/database/utils.js';
 import { setMainLeftProfileImage } from "@/js/main/main-left.js";
 import { setRightCornerImage } from "@/js/nav/nav";
-import { setMidHighLineImg, setMidProfileImg, popupListener, setMidPostHolder, generateMidPostList } from "@/js/main/main-mid.js";
+import { 
+    setMidHighLineImg, 
+    setMidProfileImg, 
+    popupListener, 
+    setMidPostHolder, 
+    generateMidPostList, 
+    setProfileBoarderColor,
+    randomPickImage
+ } from "@/js/main/main-mid.js";
 
 // const path=getPath();
 // console.log(path);
@@ -32,6 +40,12 @@ popupListener();
 setMidPostHolder(profile);
 //mid post
 generateMidPostList(cards);
+
+//get color code
+
+setProfileBoarderColor();
+
+randomPickImage(); 
 
 
 //main-right

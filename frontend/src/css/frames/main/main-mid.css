@@ -115,6 +115,9 @@
     position: absolute;
     left: 1rem;
 }
+.main-mid-thought-wrapper>input:focus{
+    outline: 0;
+} 
 
 .main-mid-thought-wrapper> :last-child {
     position: absolute;

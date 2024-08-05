@@ -71,6 +71,7 @@ export const generateMidPostList = (cards) =>{
                 <img src=${value.comment.img_src_list[2]} class="profile-photo" alt="profile-photo" loading="lazy">
                 <span class="like-info">Liked by <strong>${value.comment.first_people_name}</strong> and <strong>${value.comment.like_peoples_number}</strong>others</span>
               </div>
+              
               <span class="comment-info">${value.comment.comment_info}</span>
               <span class="view-btn">View all ${value.comment.view_number}comments</span>
             </div>
@@ -79,3 +80,96 @@ export const generateMidPostList = (cards) =>{
 
   })
 };
+
+//set board color
+//generate random color
+export const getRandomColor = () => {
+  let color = "#";
+  for(let i = 0; i<6; i++){
+    const str = "0123456789ABCDEF";
+    color+=str[Math.floor(Math.random()*16)];
+  }
+  return color;
+}
+export const setProfileBoarderColor = () => {
+  const boarders = document.querySelectorAll(".main-mid-post-wrapper .profile-photo");
+  boarders.forEach( (item)=>{
+    const borderColor = getRandomColor()
+    item.style.borderColor=borderColor;
+  })
+};
+
+//set random pics
+const images = [
+  "//ik.imagekit.io/fangweij/highline/highline_1.webp",
+  "//ik.imagekit.io/fangweij/highline/highline_2.webp",
+  "//ik.imagekit.io/fangweij/highline/highline_3.webp",
+  "//ik.imagekit.io/fangweij/highline/highline_4.webp",
+  "//ik.imagekit.io/fangweij/highline/highline_5.webp",
+  "//ik.imagekit.io/fangweij/highline/highline_6.webp",
+  "//ik.imagekit.io/fangweij/highline/highline_7.webp",
+  "//ik.imagekit.io/fangweij/highline/highline_8.webp",
+];
+const images2 = [
+  "//ik.imagekit.io/fangweij/profile/profile_1.webp",
+  "//ik.imagekit.io/fangweij/profile/profile_2.webp",
+  "//ik.imagekit.io/fangweij/profile/profile_3.webp",
+  "//ik.imagekit.io/fangweij/profile/profile_4.webp",
+  "//ik.imagekit.io/fangweij/profile/profile_5.webp",
+  "//ik.imagekit.io/fangweij/profile/profile_6.webp",
+  "//ik.imagekit.io/fangweij/profile/profile_7.webp",
+  "//ik.imagekit.io/fangweij/profile/profile_8.webp",
+  "//ik.imagekit.io/fangweij/profile/profile_9.webp",
+  "//ik.imagekit.io/fangweij/profile/profile_10.webp",
+  "//ik.imagekit.io/fangweij/profile/profile_11.webp",
+  "//ik.imagekit.io/fangweij/profile/profile_12.webp",
+  "//ik.imagekit.io/fangweij/profile/profile_13.webp",
+  "//ik.imagekit.io/fangweij/profile/profile_14.webp",
+  "//ik.imagekit.io/fangweij/profile/profile_15.webp",
+  "//ik.imagekit.io/fangweij/profile/profile_16.webp",
+  "//ik.imagekit.io/fangweij/profile/profile_17.webp",
+];
+const images3 = [
+  "//ik.imagekit.io/fangweij/post/post_1.webp",
+  "//ik.imagekit.io/fangweij/post/post_2.webp",
+  "//ik.imagekit.io/fangweij/post/post_3.webp",
+  "//ik.imagekit.io/fangweij/post/post_4.webp",
+  "//ik.imagekit.io/fangweij/post/post_5.webp",
+  "//ik.imagekit.io/fangweij/post/post_6.webp",
+  "//ik.imagekit.io/fangweij/post/post_7.webp",
+  "//ik.imagekit.io/fangweij/post/post_8.webp",
+  "//ik.imagekit.io/fangweij/post/post_9.webp",
+  "//ik.imagekit.io/fangweij/post/post_10.webp",
+  "//ik.imagekit.io/fangweij/post/post_11.webp",
+];
+
+function shuffleArray (array){
+  for (let i = array.length-1; i>0; i-- ){
+    const j = Math.floor(Math.random()*(i+1));
+    [array[i],array[j]]=[array[j],array[i]];
+  };
+  return array;
+
+}
+
+const setRandomImg = () => {
+  const shuffleImages = shuffleArray(images);
+  const seletedImages = shuffleImages.slice(0,6);
+
+  const shuffleImages2 = shuffleArray(images2);
+  const seletedImages2 = shuffleImages2.slice(0,6);
+
+  const shuffleImages3 = shuffleArray(images3);
+  const seletedImages3 = shuffleImages3.slice(0,6);
+
+  const cardImages = document.querySelectorAll(".main-mid-card>img");
+  cardImages.forEach((item,index)=>{item.src=seletedImages[index]});
+
+  const profileImages = document.querySelectorAll(".main-mid-card> .profile-photo >img");
+  profileImages.forEach((item,index)=>{item.src=seletedImages2[index]});
+
+  const postImages = document.querySelectorAll(".info-picture >img");
+  postImages.forEach((item,index)=>{item.src=seletedImages3[index]});
+
+}
+export const randomPickImage = () => setInterval(() => setRandomImg(), 6000);
