@@ -1,5 +1,5 @@
 .container .main-mid{
-    width: 60%;
+    flex: 3;
 }
 
 .main-mid .main-mid-card-wrapper{
